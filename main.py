@@ -21,5 +21,5 @@ for row in email_data:
     try:
       server.sendmail('test@gmail.com', [row[1]], msg.as_string())
     except SMTPException:
-      print "An error occured."
+      print("An error occured.")
 server.quit()
